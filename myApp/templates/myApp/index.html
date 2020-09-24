@@ -10,5 +10,17 @@
     <h1>Capstone Project</h1>
     <h2>Project By: Kariuki Alexander</h2>
     <h3>Institution: APU - Malaysia</h3>
+
+    <form method='post'>
+        {%csrf_token%}
+        {{ form.as_p}}
+        <p>
+          <label>Enter your Sentiment below:</label>
+        </p>
+        <p>
+          <textarea name="Sentiment" required></textarea>
+        </p>
+        <button type="submit">Submit</button> 
+    </form>
 </body>
 </html>
